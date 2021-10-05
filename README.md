@@ -1,7 +1,5 @@
 # React Native App with QR Scan
 
-This repo is proudly sponsored by:
-
 ## How to use?
 
 1. Download or clone this repo.
