@@ -47,7 +47,7 @@ const Signup = ({navigation}) => {
       style={{flex: 1}}>
       <LinearGradient colors={[COLORS.lime, COLORS.emerald]} style={{flex: 1}}>
         <ScrollView>
-          <Header title="Signup" onPress={() => navigation.navigate('Home')} />
+          <Header title="Signup" onPress={() => navigation.navigate('Login')} />
           <Logo />
 
           <View
