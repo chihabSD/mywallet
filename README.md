@@ -24,4 +24,4 @@ yarn install
 
 ## Preview
 
-![homescreen](https://raw.githubusercontent.com/chihabSD/mywallet/blob/main/assets/images/banner.png)
+![homescreen](https://github.com/chihabSD/mywallet/blob/main/assets/images/banner.png)
