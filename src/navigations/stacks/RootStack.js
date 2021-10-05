@@ -3,7 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 // import BottomTabs from './BottomTabs';
 // import AuthScreens from './AuthStack';
 import {useRedux} from '../../hooks/useRedux';
-import BottomTabs from '../BottomTabs';
+import BottomTabs from './BottomTabs';
 import AuthScreens from './AuthStack';
 // import {useRedux} from '../../hooks/useRedux';
 const RootStack = createStackNavigator();

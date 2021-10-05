@@ -24,4 +24,10 @@ yarn install
 
 ## Preview
 
-![homescreen](https://github.com/chihabSD/mywallet/blob/main/assets/images/banner.png)
+![homescreen](https://github.com/chihabSD/mywallet/blob/main/assets/images/home.png)
+![Register](https://github.com/chihabSD/mywallet/blob/main/assets/images/register.png)
+![Login](https://github.com/chihabSD/mywallet/blob/main/assets/images/login.png)
+![Camera](https://github.com/chihabSD/mywallet/blob/main/assets/images/login.png)
+![Profile](https://github.com/chihabSD/mywallet/blob/main/assets/images/profile.png)
+![Countries](https://github.com/chihabSD/mywallet/blob/main/assets/images/countries.png)
+![allow](https://github.com/chihabSD/mywallet/blob/main/assets/images/allow.png)

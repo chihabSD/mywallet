@@ -17,12 +17,15 @@ const scan = require('../../assets/icons/scan.png');
 const send = require('../../assets/icons/send.png');
 const user = require('../../assets/icons/user.png');
 const wallet = require('../../assets/icons/wallet.png');
+const verified = require('../../assets/icons/verified.png');
+const left = require('../../assets/icons/right-arrow.png');
 
 export default {
   back,
   bell,
   bill,
   close,
+  left,
   disable_eye,
   down,
   eye,
@@ -33,6 +36,7 @@ export default {
   more,
   phone,
   reload,
+  verified,
   scan,
   send,
   user,
