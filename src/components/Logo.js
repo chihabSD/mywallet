@@ -1,8 +1,8 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
-import {icons, images, SIZES} from '../constants';
+import {COLORS, FONTS, icons, images, SIZES} from '../constants';
 
-const Logo = () => {
+const Logo = ({title}) => {
   return (
     <View
       style={{
@@ -11,11 +11,13 @@ const Logo = () => {
         alignItems: 'center',
         justifyContent: 'center',
       }}>
-      <Image
-        source={images.wallieLogo}
-        resizeMode="contain"
-        style={{width: '60%'}}
-      />
+      <Text
+        style={{
+          color: COLORS.lightGreen,
+          ...FONTS.h1,
+        }}>
+        {title}
+      </Text>
     </View>
   );
 };

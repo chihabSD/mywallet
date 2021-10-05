@@ -29,7 +29,7 @@ const Login = ({navigation}) => {
       <LinearGradient colors={[COLORS.lime, COLORS.emerald]} style={{flex: 1}}>
         <ScrollView>
           <Header title="Login" islogin={true} />
-          <Logo />
+          <Logo title="Login" />
 
           <View
             style={{

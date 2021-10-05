@@ -37,10 +37,7 @@ const Signup = ({navigation}) => {
   const handleSelectedCountries = country => {
     setSelectedCountry(country);
   };
-  //   "name": "Tuvalu",
-  //   "flag": "🇹🇻",
-  //   "code": "TV",
-  //   "dial_code": "+688"
+
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === 'ios' ? 'padding' : null}
@@ -48,7 +45,7 @@ const Signup = ({navigation}) => {
       <LinearGradient colors={[COLORS.lime, COLORS.emerald]} style={{flex: 1}}>
         <ScrollView>
           <Header title="Signup" onPress={() => navigation.navigate('Login')} />
-          <Logo />
+          <Logo title="Signup" />
 
           <View
             style={{
