@@ -72,5 +72,8 @@
 		<string>RobotoCondensed-LightItalic.ttf</string>
 		<string>RobotoCondensed-Regular.ttf</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+<string>Digitalwallet needs camera to scan qr code</string>
+
 </dict>
 </plist>

@@ -2,10 +2,11 @@ import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import {COLORS, FONTS, SIZES} from '../constants';
 
-const FormikButton = ({btnTitle}) => {
+const FormikButton = ({btnTitle, onPress}) => {
   return (
     <View style={{marginTop: SIZES.padding * 3}}>
       <TouchableOpacity
+        onPress={onPress}
         style={{
           height: 60,
           backgroundColor: COLORS.black,

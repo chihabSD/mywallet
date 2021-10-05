@@ -15,9 +15,12 @@ import {COLORS, FONTS, SIZES} from '../constants';
 import FormikButton from '../formik/FormikButton';
 import FormikInput from '../formik/FormikInput';
 import {usePassword} from '../hooks/usePassword';
+import {useRedux} from '../hooks/useRedux';
+import {authenticate} from '../redux/reducers/login';
 
 const Login = ({navigation}) => {
   const {passwordVisible, togglePassword} = usePassword();
+  const {dispatch} = useRedux();
 
   return (
     <KeyboardAvoidingView
@@ -42,7 +45,10 @@ const Login = ({navigation}) => {
               togglePassword={togglePassword}
               passwordVisible={passwordVisible}
             />
-            <FormikButton btnTitle="Login" />
+            <FormikButton
+              btnTitle="Login"
+              onPress={() => dispatch(authenticate())}
+            />
           </View>
 
           <TouchableOpacity

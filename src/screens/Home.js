@@ -12,8 +12,11 @@ import HomeHeader from '../components/HomeHeader';
 import PromoItems from '../components/PromoItems';
 import {COLORS, SIZES, FONTS, icons, images} from '../constants';
 import {featuresData, specialPromoData} from '../helpers/data';
+import {useRedux} from '../hooks/useRedux';
+import {unauthenticate} from '../redux/reducers/login';
 
 const Home = () => {
+  const {dispatch} = useRedux();
   const [features, setFeatures] = React.useState(featuresData);
   const [specialPromos, setSpecialPromos] = React.useState(specialPromoData);
 
@@ -53,9 +56,11 @@ const Home = () => {
           flexDirection: 'row',
           marginBottom: SIZES.padding,
         }}>
-        <View style={{flex: 1}}>
+        <TouchableOpacity
+          onPress={() => dispatch(unauthenticate())}
+          style={{flex: 1}}>
           <Text style={{...FONTS.h3}}>Special Promos</Text>
-        </View>
+        </TouchableOpacity>
         <TouchableOpacity onPress={() => console.log('View All')}>
           <Text style={{color: COLORS.gray, ...FONTS.body4}}>View All</Text>
         </TouchableOpacity>

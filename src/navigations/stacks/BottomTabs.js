@@ -9,8 +9,8 @@ import Svg, {Path} from 'react-native-svg';
 import {isIphoneX} from 'react-native-iphone-x-helper';
 
 // import { Home, Scan } from "../screens"
-import {COLORS, icons} from '../constants';
-import {Home, Scan} from '../screens';
+import {COLORS, icons} from '../../constants';
+import {Home, Scan} from '../../screens';
 // import { COLORS, icons } from "../constants"
 
 const Tab = createBottomTabNavigator();
