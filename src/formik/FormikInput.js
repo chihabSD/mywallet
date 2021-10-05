@@ -9,6 +9,8 @@ const FormikInput = ({
   isPassword,
   passwordVisible,
   togglePassword,
+  toggleModal,
+  selectedCountry,
 }) => {
   return (
     <View style={{marginTop: SIZES.padding * 3}}>
@@ -25,6 +27,7 @@ const FormikInput = ({
       {isPhone ? (
         <View style={{flexDirection: 'row'}}>
           <TouchableOpacity
+            onPress={toggleModal}
             style={{
               width: 100,
 
@@ -43,12 +46,29 @@ const FormikInput = ({
               />
             </View>
 
-            <View style={{justifyContent: 'center', marginLeft: 5}}>
-              <Image
+            <View
+              style={{
+                justifyContent: 'center',
+                marginLeft: 5,
+                // height: 30,
+                // alignItems: 'center',
+                paddingTop: 5,
+                // backgroundColor: 'red',
+              }}>
+              <Text
+                style={{
+                  color: COLORS.lightGreen,
+                  marginBottom: isPhone ? 5 : null,
+                  ...FONTS.body1,
+                  alignSelf: 'center',
+                }}>
+                {selectedCountry.flag}
+              </Text>
+              {/* <Image
                 source={images.usFlag}
                 resizeMode="contain"
                 style={{width: 30, height: 30}}
-              />
+              /> */}
             </View>
             <View style={{justifyContent: 'center', marginLeft: 5}}>
               <Text
@@ -57,7 +77,7 @@ const FormikInput = ({
                   marginBottom: isPhone ? 5 : null,
                   ...FONTS.body3,
                 }}>
-                US+1
+                {selectedCountry.dial_code}
               </Text>
             </View>
           </TouchableOpacity>

@@ -1,4 +1,6 @@
-import React, {useState} from 'react';
+import {useFocusEffect} from '@react-navigation/native';
+import axios from 'axios';
+import React, {useCallback, useEffect, useState} from 'react';
 import {
   View,
   Text,
@@ -19,12 +21,26 @@ import {COLORS, FONTS, SIZES} from '../constants';
 import FormikButton from '../formik/FormikButton';
 import FormikInput from '../formik/FormikInput';
 import {usePassword} from '../hooks/usePassword';
+import CountriesModal from '../Modals/Countries';
 
 const Signup = ({navigation}) => {
   const {passwordVisible, togglePassword} = usePassword();
-  const [selectedArea, setSelectedArea] = useState([]);
+  const [selectedCountry, setSelectedCountry] = useState({
+    name: 'United States',
+    flag: '🇺🇸',
+    code: 'US',
+    dial_code: '+1',
+  });
   const [modalVisible, setModalVisible] = useState(false);
-
+  const [countries, setCountries] = useState([]);
+  const toggleModal = () => setModalVisible(prevState => !prevState);
+  const handleSelectedCountries = country => {
+    setSelectedCountry(country);
+  };
+  //   "name": "Tuvalu",
+  //   "flag": "🇹🇻",
+  //   "code": "TV",
+  //   "dial_code": "+688"
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === 'ios' ? 'padding' : null}
@@ -43,7 +59,9 @@ const Signup = ({navigation}) => {
             <FormikInput
               isPhone={true}
               label="Phone number"
+              toggleModal={toggleModal}
               placeholder="Enter phone number"
+              selectedCountry={selectedCountry}
             />
 
             <FormikInput
@@ -56,6 +74,11 @@ const Signup = ({navigation}) => {
             <FormikButton btnTitle="Continue" />
           </View>
         </ScrollView>
+        <CountriesModal
+          handleSelectedCountries={handleSelectedCountries}
+          toggleModal={toggleModal}
+          modalVisible={modalVisible}
+        />
       </LinearGradient>
     </KeyboardAvoidingView>
   );
