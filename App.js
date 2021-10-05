@@ -5,6 +5,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import {Login, Signup} from './src/screens';
+import BottomTabs from './src/navigations/BottomTabs';
+// import BottomTabs from './src/navigations/BottomTabs';
 
 const theme = {
   ...DefaultTheme,
@@ -21,9 +23,11 @@ const App = () => {
     <NavigationContainer theme={theme}>
       <Stack.Navigator
         screenOptions={{headerShown: false}}
-        initialRouteName="Login">
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="SignUp" component={Signup} />
+        // initialRouteName="Login"
+      >
+        {/* <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="SignUp" component={Signup} /> */}
+        <Stack.Screen name="Home" component={BottomTabs} />
       </Stack.Navigator>
     </NavigationContainer>
   );

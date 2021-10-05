@@ -95,7 +95,7 @@ const FormikInput = ({
               ...FONTS.body3,
             }}
             placeholderTextColor={COLORS.white}
-            selectTextOnFocus={COLORS.white}
+            // selectTextOnFocus={COLORS.white}
           />
         </View>
       ) : (
@@ -112,7 +112,7 @@ const FormikInput = ({
               ...FONTS.body3,
             }}
             placeholderTextColor={COLORS.white}
-            selectTextOnFocus={COLORS.white}
+            // selectTextOnFocus={COLORS.white}
             secureTextEntry={passwordVisible ? true : false}
           />
           {isPassword ? (

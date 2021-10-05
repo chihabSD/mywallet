@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text} from 'react-native';
 
 import {FONTS} from '../constants';
-const Test = () => {
+const Scan = () => {
   return (
     <View
       style={{
@@ -16,4 +16,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default Scan;
