@@ -24,10 +24,12 @@ yarn install
 
 ## Preview
 
-![homescreen](https://github.com/chihabSD/mywallet/blob/main/assets/images/home.png)
-![Register](https://github.com/chihabSD/mywallet/blob/main/assets/images/register.png)
-![Login](https://github.com/chihabSD/mywallet/blob/main/assets/images/login.png)
-![Camera](https://github.com/chihabSD/mywallet/blob/main/assets/images/login.png)
-![Profile](https://github.com/chihabSD/mywallet/blob/main/assets/images/profile.png)
-![Countries](https://github.com/chihabSD/mywallet/blob/main/assets/images/countries.png)
-![allow](https://github.com/chihabSD/mywallet/blob/main/assets/images/allow.png)
+<p align="center">
+  <img src="./assets/images/home.png" width="250" title="home">
+  <img src="./assets/images/register.png" width="250" title="portfolio">
+  <img src="./assets/images/login.png" width="250" title="trade">
+  <img src="./assets/images/camera.png" width="250" title="market">
+  <img src="./assets/images/profile.png" width="250" title="profile">
+  <img src="./assets/images/countries.png" width="250" title="profile">
+  <img src="./assets/images/allow.png" width="250" title="profile">
+</p>
