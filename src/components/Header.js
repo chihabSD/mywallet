@@ -2,9 +2,10 @@ import React from 'react';
 import {View, Text, TouchableOpacity, Image} from 'react-native';
 import {COLORS, FONTS, icons, SIZES} from '../constants';
 
-const Header = ({title}) => {
+const Header = ({title, onPress, close}) => {
   return (
     <TouchableOpacity
+      onPress={onPress}
       style={{
         flexDirection: 'row',
         alignItems: 'center',
@@ -12,9 +13,9 @@ const Header = ({title}) => {
         paddingHorizontal: SIZES.padding * 2,
       }}>
       <Image
-        source={icons.back}
+        source={close ? icons.close : icons.back}
         resizeMode="contain"
-        style={{width: 20, height: 20, tintColor: 'white'}}
+        style={{width: 15, height: 15, tintColor: 'white'}}
       />
 
       <Text
