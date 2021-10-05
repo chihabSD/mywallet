@@ -101,8 +101,14 @@ const CustomTabBar = props => {
 const BottomTabs = () => {
   return (
     <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+
+        tabBarShowLabel: false,
+      }}
       tabBarOptions={{
         showLabel: false,
+
         style: {
           position: 'absolute',
           bottom: 0,
